@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Tend</title>
+<meta name="description" content="Support, FAQ, and crisis resources for Tend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:#EFE7D6; --paper-alt:#EBE3D2; --card:#FEF7EB;
+    --ink:#262321; --ink-soft:#6B6357; --ink-mute:#8A8175;
+    --accent:#7E9A6F; --accent-soft:#DCE3D5; --accent-fg:#161512; --accent-ink:#52684A;
+    --rule: rgba(38,35,33,0.12);
+    --shadow: rgba(95,84,77,0.16);
+    --danger: #C0392B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:#100F0D; --paper-alt:#1B1916; --card:#24211C;
+      --ink:#EFE9DC; --ink-soft:#A89E8A; --ink-mute:#7A7264;
+      --accent:#88A57A; --accent-soft: rgba(136,165,122,0.16); --accent-fg:#161512; --accent-ink:#A3BF95;
+      --rule: rgba(239,233,220,0.12);
+      --shadow: rgba(0,0,0,0.35);
+      --danger: #E0685A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-ink); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header.top { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; text-decoration: none; color: var(--ink); }
+  .brand .mark { width: 28px; height: 28px; border-radius: 50%; border: 2.5px solid var(--accent); display: inline-flex; align-items: center; justify-content: center; }
+  .brand .mark svg { width: 14px; height: 14px; }
+  nav.top-links { display: flex; gap: 20px; font-size: 14px; font-weight: 600; }
+  nav.top-links a { text-decoration: none; color: var(--ink-soft); }
+  nav.top-links a:hover { color: var(--accent-ink); }
+
+  main { padding: 48px 0 64px; }
+  .eyebrow { font-family: "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; color: var(--ink-mute); margin-bottom: 12px; }
+  h1 { font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: clamp(30px, 5vw, 42px); letter-spacing: -0.3px; margin: 0 0 10px; }
+  .lede { font-size: 16px; color: var(--ink-soft); max-width: 52ch; margin: 0 0 40px; }
+
+  .crisis {
+    background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--danger);
+    border-radius: 16px; padding: 22px 24px; margin-bottom: 44px; box-shadow: 0 8px 24px -12px var(--shadow);
+  }
+  .crisis h2 { margin: 0 0 8px; font-size: 17px; font-weight: 700; }
+  .crisis p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 14px; }
+  .crisis-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .crisis-actions a {
+    display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+    background: var(--accent); color: var(--accent-fg); font-weight: 600; font-size: 14px;
+    padding: 10px 16px; border-radius: 14px;
+  }
+  .crisis-actions a.link { background: transparent; color: var(--accent-ink); border: 1px solid var(--rule); }
+
+  h2.section-title { font-size: 20px; font-weight: 700; margin: 40px 0 16px; }
+  .faq-item { border-bottom: 1px solid var(--rule); padding: 18px 0; }
+  .faq-item:first-of-type { border-top: 1px solid var(--rule); }
+  .faq-item h3 { font-size: 15.5px; margin: 0 0 8px; font-weight: 700; }
+  .faq-item p { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+
+  .contact-card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 20px;
+    padding: 22px 24px; margin-top: 44px; box-shadow: 0 8px 24px -12px var(--shadow);
+  }
+  .contact-card h2 { margin: 0 0 8px; font-size: 17px; font-weight: 700; }
+  .contact-card p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 6px; }
+
+  footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
+  footer nav { display: flex; gap: 18px; font-size: 13px; }
+  footer nav a { text-decoration: none; color: var(--ink-soft); }
+  footer p { font-size: 13px; color: var(--ink-mute); margin: 0; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#7E9A6F" stroke-width="2"><path d="M12 21V11M12 11c-3 0-5-2-5-5 2 0 5 1 5 4 0-3 3-4 5-4 0 3-2 5-5 5Z"/></svg></span>
+      Tend
+    </a>
+    <nav class="top-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="eyebrow">Support</p>
+    <h1>Here if you need it.</h1>
+    <p class="lede">Answers to common questions, and — first, because it matters more — resources
+      if things feel like too much right now.</p>
+
+    <div class="crisis">
+      <h2>If things feel like too much</h2>
+      <p>In the US, 988 connects you to the Suicide &amp; Crisis Lifeline by call or text, any
+        time, free. Outside the US, findahelpline.com lists local crisis lines by country.</p>
+      <div class="crisis-actions">
+        <a href="tel:988">Call 988</a>
+        <a href="sms:988">Text 988</a>
+        <a class="link" href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com →</a>
+      </div>
+    </div>
+
+    <h2 class="section-title">Frequently asked</h2>
+
+    <div class="faq-item">
+      <h3>Is my data really only on my phone?</h3>
+      <p>Yes. Tend has no account system and no server. Everything you log is stored in the app's
+        own local database on your device. See the <a href="privacy.html">privacy policy</a> for
+        the full detail.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do I need Apple Health to use Tend?</h3>
+      <p>No. Health access is entirely optional and can be turned on or off per data type in
+        Settings → Privacy &amp; Security → Health at any time. Everything in Tend works without
+        it — Health just saves you from re-logging things your phone or watch already knows.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why don't I see any insights yet?</h3>
+      <p>Tend waits until there's enough history — roughly ten days of logging on each side of a
+        comparison — before it will show a pattern. This is intentional: a pattern from three
+        days of data usually isn't a real pattern. Keep checking in, and Insights fills in.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I track alcohol, cannabis, or nicotine?</h3>
+      <p>Yes — they're in the item library alongside sleep, caffeine, and exercise, tracked the
+        same neutral way. Tend doesn't judge what you log; it just looks for patterns in how you
+        feel afterward.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is Tend a substitute for therapy or medical care?</h3>
+      <p>No. Tend is a wellness tool that helps you notice patterns in your own life — it can't
+        diagnose or treat anything, and it never suggests changing a prescribed medication.
+        If you're concerned about your mental health, please talk with a doctor or therapist,
+        and see the crisis resources above if you need support right now.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I back up or move my data to a new phone?</h3>
+      <p>Settings → Your data lets you create a full backup file and restore from one — useful
+        for moving to a new device or just keeping your own copy. Exports (JSON/CSV) are also
+        available there for sharing your data outside the app.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I delete everything?</h3>
+      <p>Settings → Your data → Delete all data removes everything Tend has stored, permanently.
+        There's no server copy to also delete — this is the whole thing.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does Tend show ads or sell my data?</h3>
+      <p>No, on both counts. Tend has no ad SDK, no analytics, and nothing to sell — see the
+        <a href="privacy.html">privacy policy</a> for specifics.</p>
+    </div>
+
+    <div class="contact-card">
+      <h2>Still stuck?</h2>
+      <!-- [UNCERTAIN] placeholder contact — see docs/appstore/LISTING.md "Support contact". -->
+      <p>Email <a href="mailto:support@example.com">support@example.com</a> and we'll get back to
+        you. Include your iOS version and a screenshot if it's a visual issue — it helps a lot.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Connor Otto. Tend is a wellness tool, not medical care.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
