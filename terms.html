@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of use — Tend</title>
+<meta name="description" content="Tend's terms of use: Apple's standard license, and the details of the Tend Plus subscription.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:#EFE7D6; --paper-alt:#EBE3D2; --card:#FEF7EB;
+    --ink:#262321; --ink-soft:#6B6357; --ink-mute:#8A8175;
+    --accent:#7E9A6F; --accent-soft:#DCE3D5; --accent-fg:#161512; --accent-ink:#52684A;
+    --rule: rgba(38,35,33,0.12);
+    --shadow: rgba(95,84,77,0.16);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:#100F0D; --paper-alt:#1B1916; --card:#24211C;
+      --ink:#EFE9DC; --ink-soft:#A89E8A; --ink-mute:#7A7264;
+      --accent:#88A57A; --accent-soft: rgba(136,165,122,0.16); --accent-fg:#161512; --accent-ink:#A3BF95;
+      --rule: rgba(239,233,220,0.12);
+      --shadow: rgba(0,0,0,0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-ink); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header.top { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; text-decoration: none; color: var(--ink); }
+  .brand .mark { width: 28px; height: 28px; border-radius: 50%; border: 2.5px solid var(--accent); display: inline-flex; align-items: center; justify-content: center; }
+  .brand .mark svg { width: 14px; height: 14px; }
+  nav.top-links { display: flex; gap: 20px; font-size: 14px; font-weight: 600; }
+  nav.top-links a { text-decoration: none; color: var(--ink-soft); }
+  nav.top-links a:hover { color: var(--accent-ink); }
+
+  main { padding: 48px 0 64px; }
+  .eyebrow { font-family: "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; color: var(--ink-mute); margin-bottom: 12px; }
+  h1 { font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: clamp(30px, 5vw, 42px); letter-spacing: -0.3px; margin: 0 0 8px; }
+  .updated { font-size: 13px; color: var(--ink-mute); margin: 0 0 32px; }
+
+  .summary {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 20px;
+    padding: 22px 24px; margin-bottom: 40px; box-shadow: 0 8px 24px -12px var(--shadow);
+  }
+  .summary h2 { margin: 0 0 10px; font-size: 15px; font-family: "Newsreader", Georgia, serif; font-weight: 600; font-style: italic; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  .summary li { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 6px; }
+
+  article section { margin-bottom: 36px; }
+  h2.section-title { font-size: 20px; font-weight: 700; margin: 0 0 12px; }
+  p, li { font-size: 15px; color: var(--ink-soft); }
+  li { margin-bottom: 6px; }
+  strong { color: var(--ink); }
+  code { background: var(--paper-alt); padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--ink-mute); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+  td { color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
+  footer nav { display: flex; gap: 18px; font-size: 13px; }
+  footer nav a { text-decoration: none; color: var(--ink-soft); }
+  footer p { font-size: 13px; color: var(--ink-mute); margin: 0; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#7E9A6F" stroke-width="2"><path d="M12 21V11M12 11c-3 0-5-2-5-5 2 0 5 1 5 4 0-3 3-4 5-4 0 3-2 5-5 5Z"/></svg></span>
+      Tend
+    </a>
+    <nav class="top-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="eyebrow">Terms of use</p>
+    <h1>The terms, in plain words.</h1>
+    <p class="updated">Effective October 4, 2026 · Applies to Tend for iOS, version 1.0</p>
+
+    <div class="summary">
+      <h2>The short version</h2>
+      <ul>
+        <li>Tend is licensed to you under Apple's Standard Licensed Application End User License Agreement.</li>
+        <li>Tend is free. Tend Plus, an optional subscription, unlocks Insights and experiments, with a 1-week free trial.</li>
+        <li>Subscriptions renew automatically until you cancel, and you cancel in your Apple ID account settings.</li>
+        <li>Tend is a wellness tool, not medical care. Your data stays on your phone.</li>
+      </ul>
+    </div>
+
+    <article>
+      <section>
+        <h2 class="section-title">License</h2>
+        <p>Tend is licensed, not sold, to you under Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard Licensed Application End User License Agreement</a> (the "Standard EULA"). By downloading or using Tend you agree to it. Where these terms add detail about Tend, such as the subscription below, they apply alongside the Standard EULA. Apple is not responsible for the app or its support, as the Standard EULA explains.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Tend Plus (auto-renewable subscription)</h2>
+        <p>Logging, check-ins, widgets, Siri, Apple Health sync, backup and export are free. <strong>Tend Plus</strong> is an optional auto-renewable subscription that unlocks <strong>Insights and experiments</strong>.</p>
+        <table>
+          <tr><th>Title</th><td>Tend Plus</td></tr>
+          <tr><th>Monthly</th><td>1 month, $2.99 per month (US)</td></tr>
+          <tr><th>Yearly</th><td>1 year, $19.99 per year (US)</td></tr>
+          <tr><th>Free trial</th><td>1 week, for either plan</td></tr>
+        </table>
+        <ul>
+          <li><strong>Free trial.</strong> Each plan starts with a 1-week free trial. If you buy a subscription before a free trial ends, the unused part of the trial is forfeited.</li>
+          <li><strong>Payment.</strong> Payment is charged to your Apple ID account at confirmation of purchase.</li>
+          <li><strong>Renewal.</strong> Your subscription renews automatically for the same length unless you cancel at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the current period, at the price of your plan.</li>
+          <li><strong>Manage or cancel.</strong> You can manage your subscription and turn off auto-renewal in your Apple ID account settings (Settings, then your name, then Subscriptions) after purchase. Deleting the app does not cancel it.</li>
+          <li><strong>Restore.</strong> If you reinstall Tend or move to a new iPhone, use Restore Purchases in the app to get Tend Plus back.</li>
+        </ul>
+        <p>Apple handles all billing and refunds. Tend never sees your payment details. Prices are for the United States and may differ elsewhere.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Wellness tool, not medical care</h2>
+        <p>Tend is a wellness tool, not medical advice. It finds patterns in what you log, and those patterns are associations, not causes. Tend does not diagnose, treat, or prevent any condition, and nothing in it replaces a doctor or other clinician. Never change a prescribed medication because of anything Tend shows. If things feel heavy for more than a few days, a professional can help. In the US you can call or text 988, or find a helpline near you at <a href="https://findahelpline.com">findahelpline.com</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Your data</h2>
+        <p>What you log stays on your phone. Tend has no account system and no server. See the <a href="privacy.html">privacy policy</a> for the details. You can export or delete everything from Settings at any time.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Changes to these terms</h2>
+        <p>If these terms change, we'll update the date at the top of this page and, for any meaningful change, note it in the app's release notes.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Contact</h2>
+        <p>Questions about these terms: <a href="mailto:cmotto11@yahoo.com">cmotto11@yahoo.com</a>.</p>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Connor Otto. Tend is a wellness tool, not medical care.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
