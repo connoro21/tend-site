@@ -4,11 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tend — a private mood and habit checklist</title>
-<meta name="description" content="Tend is a private, on-device mood and habit checklist for iPhone. No accounts, no ads, your data stays on your phone.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Tend is a private, on-device mood and habit checklist for iPhone. No accounts, no ads, Tend has no server and never receives your data.">
 <style>
+  @font-face { font-family:"Newsreader"; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/Newsreader-Regular.woff2") format("woff2"); }
+  @font-face { font-family:"Newsreader"; font-weight:600; font-style:normal; font-display:swap; src:url("fonts/Newsreader-SemiBold.woff2") format("woff2"); }
+  @font-face { font-family:"Newsreader"; font-weight:400; font-style:italic; font-display:swap; src:url("fonts/Newsreader-Italic.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-Regular.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-Medium.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:600; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-SemiBold.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-Bold.woff2") format("woff2"); }
+  @font-face { font-family:"JetBrains Mono"; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/JetBrainsMono-Medium.woff2") format("woff2"); }
   :root {
     --paper:#EFE7D6; --paper-alt:#EBE3D2; --card:#FEF7EB;
     --ink:#262321; --ink-soft:#6B6357; --ink-mute:#8A8175;
@@ -93,7 +98,7 @@
 
   footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
-  footer nav { display: flex; gap: 18px; font-size: 13px; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 18px; font-size: 13px; }
   footer nav a { text-decoration: none; color: var(--ink-soft); }
   footer p { font-size: 13px; color: var(--ink-mute); margin: 0; }
 </style>
@@ -126,7 +131,7 @@
       <a class="btn primary" href="#">Coming soon to the App Store</a>
       <a class="btn secondary" href="support.html">See how it works</a>
     </div>
-    <p class="note">No accounts. No ads. No analytics. Nothing leaves your phone.</p>
+    <p class="note">No accounts. No ads. No analytics. Tend has no server and never receives your data.</p>
 
     <section class="features">
       <p class="eyebrow">What it does</p>
@@ -153,7 +158,7 @@
         </div>
         <div class="card">
           <h3>Locked down, your way</h3>
-          <p>Face ID app lock, and a full backup/restore file you control. Nothing is stored anywhere but your phone.</p>
+          <p>Face ID app lock, and a full backup/restore file you control. Tend keeps your data on your iPhone and has no server. Your iPhone's own backup and any file you export are outside Tend's control.</p>
         </div>
       </div>
     </section>
@@ -165,7 +170,7 @@
         <li>All data lives in the app's own storage on your device.</li>
         <li>No analytics, no ad tracking, no third-party SDKs.</li>
         <li>HealthKit reads and writes happen on-device, between Tend and Health, and go nowhere else.</li>
-        <li>Tend has no server and sends nothing to us. The only network activity is links you tap yourself, like this page or the 988 crisis line, and Apple's own App Store checks for Tend Plus.</li>
+        <li>Tend has no server and never receives your data. Data moves only through Apple's StoreKit (for Tend Plus), links you choose to open, like this page or the 988 crisis line, and your own iOS or iCloud backups.</li>
       </ul>
     </section>
   </div>
@@ -178,6 +183,7 @@
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy policy</a>
       <a href="terms.html">Terms of use</a>
+      <a href="privacy.html#consumer-health-data">Consumer Health Data Privacy Policy</a>
       <a href="mailto:cmotto11@yahoo.com">cmotto11@yahoo.com</a>
     </nav>
   </div>

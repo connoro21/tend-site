@@ -4,11 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy — Tend</title>
-<meta name="description" content="Tend's privacy policy: what the app stores, where, and why nothing leaves your phone.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<meta name="description" content="Tend's privacy policy: what the app stores, where, and why Tend never receives your data.">
 <style>
+  @font-face { font-family:"Newsreader"; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/Newsreader-Regular.woff2") format("woff2"); }
+  @font-face { font-family:"Newsreader"; font-weight:600; font-style:normal; font-display:swap; src:url("fonts/Newsreader-SemiBold.woff2") format("woff2"); }
+  @font-face { font-family:"Newsreader"; font-weight:400; font-style:italic; font-display:swap; src:url("fonts/Newsreader-Italic.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-Regular.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-Medium.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:600; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-SemiBold.woff2") format("woff2"); }
+  @font-face { font-family:"Plus Jakarta Sans"; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/PlusJakartaSans-Bold.woff2") format("woff2"); }
+  @font-face { font-family:"JetBrains Mono"; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/JetBrainsMono-Medium.woff2") format("woff2"); }
   :root {
     --paper:#EFE7D6; --paper-alt:#EBE3D2; --card:#FEF7EB;
     --ink:#262321; --ink-soft:#6B6357; --ink-mute:#8A8175;
@@ -69,7 +74,7 @@
 
   footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
-  footer nav { display: flex; gap: 18px; font-size: 13px; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 18px; font-size: 13px; }
   footer nav a { text-decoration: none; color: var(--ink-soft); }
   footer p { font-size: 13px; color: var(--ink-mute); margin: 0; }
 </style>
@@ -92,13 +97,13 @@
 <main>
   <div class="wrap">
     <p class="eyebrow">Privacy policy</p>
-    <h1>Your data stays on your phone.</h1>
-    <p class="updated">Last updated October 5, 2026 · Applies to Tend for iOS, version 1.0</p>
+    <h1>Tend never receives your data.</h1>
+    <p class="updated">Last updated October 7, 2026 · Applies to Tend for iOS, version 1.0</p>
 
     <div class="summary">
       <h2>The short version</h2>
       <ul>
-        <li>Tend has no account system, no server, and no analytics. Everything you log is stored only in the app's own storage on your iPhone.</li>
+        <li>Tend has no account system, no server, and no analytics. Everything you log is stored in the app's own storage on your iPhone. Tend never receives it.</li>
         <li>Apple Health access (if you turn it on) is read and written directly between Tend and the Health app, on your device. It never passes through us.</li>
         <li>We don't sell, rent, or share your data with anyone, because we never receive it in the first place.</li>
         <li>You can export or delete everything from Settings at any time.</li>
@@ -109,7 +114,9 @@
       <section>
         <h2 class="section-title">What Tend stores, and where</h2>
         <p>Tend stores the items you choose to track, the entries you log against them, your mood/energy/calm/focus check-ins, any notes you add, your app settings (theme, reminder time, Face ID lock), and — if you use it — your own backup files. All of it lives in the app's local database on your device, inside a secure App Group container shared only between the Tend app and its Home Screen widget, both of which run on your phone.</p>
-        <p>Nothing here is uploaded to a server, because Tend doesn't have one. There is no Tend account, no sign-in, and no cloud sync in version 1.0. If you delete the app, this data is deleted with it — unless you've saved a backup file yourself.</p>
+        <p>Nothing here is uploaded to a server, because Tend doesn't have one. There is no Tend account, no sign-in, and no cloud sync in version 1.0. If you delete the app, this data is deleted with it, unless you've saved a backup file yourself or your iPhone backup holds a copy.</p>
+        <p><strong>iPhone backups.</strong> Tend's data is not excluded from your iPhone's own iCloud or computer backup, so that backup may include it, under your Apple Account's terms. Tend doesn't control that backup.</p>
+        <p><strong>Face ID.</strong> The optional app lock uses Apple's Face ID and passcode system. Tend never receives your biometric data. Reminder notifications use general wording and don't include your logs. Widgets and the lock-screen progress widget hide your data while the app lock is on; what else appears on your Lock Screen follows your iPhone's Lock Screen settings.</p>
       </section>
 
       <section>
@@ -117,6 +124,17 @@
         <p>With your permission, Tend can read the following from Apple Health, so you don't have to log what your phone or watch already knows: steps, workouts, sleep, time in daylight, mindful minutes, water intake, menstrual cycle tracking, heart rate variability, and caffeine. Each category is a separate permission you grant (or decline) in Apple's own permission sheet, and you can change any of them later in Settings → Privacy & Security → Health.</p>
         <p>With separate permission, Tend can also write your mood check-ins back to Apple Health as State of Mind entries, so they show up alongside your other health data if you choose.</p>
         <p><strong>All of this happens on your device.</strong> Reading from Health and writing to Health both happen directly between Tend and the Health app on your iPhone — this data is never transmitted to us, to any analytics service, or to any third party. We don't use Health data for advertising, and we never write anything to Health that you didn't enter yourself.</p>
+      </section>
+
+      <section id="consumer-health-data">
+        <h2 class="section-title">Consumer health data</h2>
+        <p>This section is Tend's Consumer Health Data Privacy Policy, for the Washington My Health My Data Act, Nevada SB 370 and similar laws. It applies to everyone, wherever you live.</p>
+        <p><strong>Categories.</strong> The health and wellness data you enter in Tend or choose to import from Apple Health: mood, energy, calm and focus check-ins; notes; medication and supplement logs; menstrual flow and birth control entries; intimacy entries; sleep, steps, workouts, heart rate variability, caffeine, water, mindful minutes and time in daylight.</p>
+        <p><strong>Purpose.</strong> Only to show you your own logs and patterns on your device.</p>
+        <p><strong>Collection, sale and sharing.</strong> The developer does not collect this data: it stays on your iPhone and Tend has no server. It is never sold and never shared with any third party, processor or affiliate. The only ways it moves are your own iOS or iCloud backups and files you export and share yourself.</p>
+        <p><strong>Withdraw consent.</strong> Turn off any Apple Health category, or Tend's access to Health entirely, in Settings → Privacy &amp; Security → Health. Stop logging at any time, or delete entries or items inside Tend.</p>
+        <p><strong>Deletion.</strong> Settings → Your data → Erase everything deletes it all from your device (see Export, backup, and deletion above for the Apple Health and backup details). Because the developer holds no copy, there is nothing further to delete on our side.</p>
+        <p><strong>Contact.</strong> <a href="mailto:cmotto11@yahoo.com">cmotto11@yahoo.com</a> for any question or request about your health data.</p>
       </section>
 
       <section>
@@ -128,7 +146,9 @@
           <tr><th>No selling data</th><td>We can't sell what we never receive.</td></tr>
           <tr><th>No third-party sharing</th><td>Your logs, check-ins, and Health data stay between you and your phone.</td></tr>
         </table>
-        <p>Tend has no server of its own and sends nothing to us. The only network activity is links you tap yourself — for example, the 988 crisis line, findahelpline.com, or this website — and Apple's own App Store checks for Tend Plus, described under Purchases below.</p>
+        <p>Tend has no server of its own and never receives your data. Data moves only through Apple's StoreKit for Tend Plus (see Purchases below), links you choose to open (for example the 988 crisis line, findahelpline.com, or this website), and your own iOS or iCloud backups.</p>
+        <p><strong>Do Not Track.</strong> Tend does not track you across sites or apps, so there is nothing to opt out of.</p>
+        <p><strong>This website.</strong> It is hosted on GitHub Pages. GitHub may log visitors' IP addresses under its own privacy statement. We run no analytics or cookies on this site, and its fonts are served from the site itself.</p>
       </section>
 
       <section>
@@ -144,12 +164,14 @@
 
       <section>
         <h2 class="section-title">Export, backup, and deletion</h2>
-        <p>From Settings, you can export your data as a CSV file for a spreadsheet, create a full backup file of your history to restore later or move to a new device, or permanently delete everything Tend has stored. Private items you've marked as private (for example, an intimacy entry) are excluded from exports by default. None of these actions involve us — they happen entirely on your device, to a file you control.</p>
+        <p>From Settings, you can export your data as a CSV file for a spreadsheet, create a full backup file of your history to restore later or move to a new device, or permanently delete everything Tend has stored. None of these actions involve us — they happen entirely on your device, to a file you control.</p>
+        <p><strong>The CSV export</strong> leaves out items you've marked private (for example, an intimacy entry) unless you choose to include them. <strong>The backup file</strong> is a full plaintext copy of your history, private items included, and is not encrypted. Where it goes after you tap Share (Files, Mail, another app) is your choice and outside Tend's control; keep it somewhere safe.</p>
+        <p><strong>Erase everything</strong> permanently deletes what Tend has stored on your device. It also removes the State of Mind entries Tend saved to Apple Health in the last 30 days; older entries stay in Apple Health, and you delete those in the Health app. Erasing can't be undone, and it doesn't touch copies in your iPhone backups or backup files you've saved.</p>
       </section>
 
       <section>
         <h2 class="section-title">Children</h2>
-        <p>Tend is not directed at children and is not designed for users under 13. It contains mental-health-adjacent content, mood check-ins, and references to substances (as trackable items, not promotion), and is rated for age 12+ on the App Store. Since Tend collects no data from us in the first place, there's no server-side data to worry about — but if you believe a child has used the app and you'd like the on-device data removed, deleting the app removes it.</p>
+        <p>Tend is rated 12+ on the App Store and is not directed to children under 13. It contains mental-health-adjacent content, mood check-ins, and references to substances (as trackable items, not promotion). Tend collects no information from anyone, including children, because it has no server. If a parent wants a child's on-device data removed, deleting the app or using Settings → Your data → Erase everything removes it.</p>
       </section>
 
       <section>
@@ -159,7 +181,6 @@
 
       <section>
         <h2 class="section-title">Contact</h2>
-        <!-- [UNCERTAIN] placeholder contact — see docs/appstore/LISTING.md "Support contact". -->
         <p>Questions about privacy, or a request related to your data: <a href="mailto:cmotto11@yahoo.com">cmotto11@yahoo.com</a>.</p>
       </section>
     </article>
@@ -173,6 +194,7 @@
       <a href="index.html">Home</a>
       <a href="support.html">Support</a>
       <a href="terms.html">Terms of use</a>
+      <a href="privacy.html#consumer-health-data">Consumer Health Data Privacy Policy</a>
     </nav>
   </div>
 </footer>
